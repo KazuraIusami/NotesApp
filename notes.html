@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+
+	<head>
+	<title>Notes</title>
+		<style>
+			body {
+				overflow: hidden;
+				
+			}
+			
+			#noteContent {
+				border: 1px dotted black;
+				border-radius:15px;
+				width: 55%;
+				height: 70%;
+			}
+			#noteInput {
+				width:55%;
+			}
+			#colorPicker {
+				display: inline;
+				float:right;
+			}
+		
+			
+		</style>
+	</head>
+	<body>
+	<input type="color" id="colorPicker"></input>
+	
+	<p id="userNameElement"></p>
+
+		<input type="text" placeholder="add note" id="noteInput"></input><button onclick="updateNotes(noteInput.value)"> Submit </button> <button id="clearNotes">Clear Notes</button>
+		<div id="noteContent">
+			<h3>Notes:</h3><hr>
+		<p id="noteElement"></p>
+		</div>
+
+
+		
+		<script src='script.js'></script>
+		
+	</body>
+
+</html>
